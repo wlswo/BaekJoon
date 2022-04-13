@@ -21,14 +21,6 @@ public class Main {
 			}
 		}
 		
-//		for(String[] i : arr) {
-//			for(String j : i) {
-//				System.out.print(j+" ");
-//			}
-//			System.out.println();
-//		}
-			
-		
 		
 		int cnt = 0;
 		int a = 0;
@@ -42,7 +34,5 @@ public class Main {
 		
 		System.out.println(cnt);
 		
-		
 	}
-
 }
