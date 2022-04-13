@@ -4,7 +4,11 @@ public class Test1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("커밋/푸시 테스트2");
+		int i = 0;
+		for( i=0; i<5; i++) {
+			System.out.println(i);
+		}
+		System.out.println(i);
 	}
 
 }
