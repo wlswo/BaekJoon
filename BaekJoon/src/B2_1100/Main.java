@@ -29,7 +29,7 @@ public class Main {
 //		}
 			
 		
-		//ㅇ
+		
 		int cnt = 0;
 		int a = 0;
 		for(int i=0; i<8; i++) {
