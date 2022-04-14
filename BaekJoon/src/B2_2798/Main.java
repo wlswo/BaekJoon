@@ -19,7 +19,9 @@ public class Main {
 		for(int i=0; i<arr.length; i++) {
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
-	
+		
+		
+		//부르트포스 난사~ 완전대
 		int pivot = 0;
 		for(int i=0; i<arr.length-2; i++) {  // 8
 			for(int j=i+1; j<arr.length-1; j++) {
