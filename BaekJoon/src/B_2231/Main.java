@@ -9,12 +9,12 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int num = sc.nextInt();
+		int result = 0;
 		
 		//1부터 탐색제일 작은값 이니까..
 		for(int i=0; i<num; i++) {
 			int number = i;
 			int sum = 0;	//각 자릿수의 합 
-			
 			while(number != 0) {
 				sum += number%10;
 				number /= 10;
@@ -22,12 +22,12 @@ public class Main {
 			}
 			
 			if( (i+sum) == num ) {
-				System.out.println(i);
+				result = i;
 				break;
 			}
 	
 		}
-					
+		System.out.println(result);
 		sc.close();
 	}
 

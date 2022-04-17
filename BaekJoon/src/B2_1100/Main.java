@@ -10,7 +10,6 @@ public class Main {
 		
 		String arr[][] = new String[8][8];
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
 		StringBuffer sb = new StringBuffer();
 		
 		for(int i=0; i<8; i++) {

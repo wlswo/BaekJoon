@@ -1,7 +1,25 @@
 package BK;
 
+class Parent{
+	
+	int a=0;
+	Parent(){
+		a++;
+		System.out.print(a);
+	}
+}
+
+class Child extends Parent{
+	int b =0; 
+	Child(int a){
+		this.b = a;
+		System.out.print(a++);
+	}
+	
+}
+
 public class test2 {
 	public static void main(String[] args) {
-		System.out.println("커밋 / 푸시 테스트");
+		Parent pa = new Child(5); 
 	}
 }
