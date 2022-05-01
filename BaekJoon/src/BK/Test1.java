@@ -1,14 +1,34 @@
 package BK;
 
+class P{
+	public P() {
+		System.out.println("A");
+	}
+	
+	public P(int a) {
+		System.out.println("B");
+	}
+	
+}
+class C extends P{
+	public C() {
+		System.out.println("C");
+	}
+	
+	public C(int a) {
+		super(a);
+		System.out.println("D");
+	}
+	
+}
+
 public class Test1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int i = 0;
-		for( i=0; i<5; i++) {
-			System.out.println(i);
-		}
-		System.out.println(i);
+		C c = new C(5);
+		
+		
+		
 	}
 
 }
