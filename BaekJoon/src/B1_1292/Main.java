@@ -16,7 +16,7 @@ public class Main {
 		int arr[] = new int[1002];
 		
 		//1 22 333 4444
-		int number = 1;
+		
 		int cnt = 1;
 		for(int i=1; i<1001; i++) {
 			for(int j=0; j<i; j++) {
