@@ -45,6 +45,7 @@ public class Main {
 
 	}
 	
+	//이분탐색 
 	static boolean check(int CutHeight) {
 		long sum = 0;
 		long tree;
