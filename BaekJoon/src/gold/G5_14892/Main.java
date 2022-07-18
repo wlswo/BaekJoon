@@ -15,7 +15,6 @@ public class Main {
 				data[i][j] = line.charAt(j)-'0';
 			}
 		}
-		
 		StringTokenizer st; 
 		int k = Integer.parseInt(br.readLine());
 		for(int i=0; i<k; i++) {
