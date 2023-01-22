@@ -1,4 +1,4 @@
-package gold.G5_5430;
+package BaekJoon.src.gold.G5.G5_5430;
 
 import java.io.BufferedReader;
 import java.io.IOException;
