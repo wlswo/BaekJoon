@@ -3,7 +3,6 @@ package BaekJoon.src.gold.G4.G4_9663_N_Queen;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 public class Main {
     static int count = 0;
     static int[] arr;
@@ -13,7 +12,6 @@ public class Main {
 
         N = Integer.parseInt(br.readLine());
         arr = new int[N];
-
         nQueen(0);
         System.out.println(count);
     }

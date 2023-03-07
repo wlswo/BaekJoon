@@ -1,4 +1,4 @@
-package gold.G4_9935;
+package BaekJoon.src.gold.G4.G4_9935_문자열폭발;
 
 import java.io.BufferedReader;
 import java.io.IOException;
