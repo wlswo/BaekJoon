@@ -17,34 +17,34 @@ public class Main {
         PriorityQueue<Word> queue = new PriorityQueue<>(new Comparator<Word>() {
             @Override
             public int compare(Word o1, Word o2) {
-                if(o1.cnt == o2.cnt) {
-                    if(o1.word.length() == o2.word.length()) {
+                if (o1.cnt == o2.cnt) {
+                    if (o1.word.length() == o2.word.length()) {
                         return o1.word.compareTo(o2.word);
                     }
                     return o2.word.length() - o1.word.length();
-                }else {
+                } else {
                     return o2.cnt - o1.cnt;
                 }
             }
         });
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine()," ");
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         int n = Integer.parseInt(st.nextToken());
         int limit = Integer.parseInt(st.nextToken());
 
-        Map<String,Integer> map = new HashMap<>();
-        for(int i=0; i<n; i++) {
+        Map<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
             String s = br.readLine();
-            if(s.length() < limit)
+            if (s.length() < limit)
                 continue;
 
-            map.put(s,map.getOrDefault(s,0) + 1);
+            map.put(s, map.getOrDefault(s, 0) + 1);
         }
 
         Set<String> keys = map.keySet();
-        for(String s : keys) {
-            queue.add(new Word(s,map.get(s)));
+        for (String s : keys) {
+            queue.add(new Word(s, map.get(s)));
         }
 
         StringBuilder sb = new StringBuilder();
@@ -54,10 +54,11 @@ public class Main {
         System.out.println(sb);
     }
 
-    static class Word{
+    static class Word {
         String word;
         int cnt;
-        Word(String word,int cnt) {
+
+        Word(String word, int cnt) {
             this.word = word;
             this.cnt = cnt;
         }
