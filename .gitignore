@@ -2,6 +2,12 @@
 # Created by https://www.toptal.com/developers/gitignore/api/eclipse,macos,java
 # Edit at https://www.toptal.com/developers/gitignore?templates=eclipse,macos,java
 
+*.iml
+*.project
+*.classpath
+*.xml
+*.svg
+
 ### Eclipse ###
 .metadata
 bin/
