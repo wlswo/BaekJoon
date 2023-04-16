@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * https://www.acmicpc.net/problem/14940
  * Problem: 쉬운 최단거리
  * Level: S1
- * Algorithm: 넓이우선탐색 
+ * Algorithm: 넓이우선탐색
  */
 public class Main {
     static int[][] map;
@@ -36,7 +36,7 @@ public class Main {
             String[] a = br.readLine().split(" ");
             for (int j = 0; j < row; j++) {
                 map[i][j] = Integer.parseInt(a[j]);
-                if(map[i][j] == 2){
+                if (map[i][j] == 2) {
                     tmpi = i;
                     tmpj = j;
                 }
@@ -45,8 +45,8 @@ public class Main {
 
         for (int i = 0; i < col; i++) {
             for (int j = 0; j < row; j++) {
-                if(map[i][j] == 2) {
-                    bfs(i,j);
+                if (map[i][j] == 2) {
+                    bfs(i, j);
                 }
             }
         }
@@ -55,9 +55,9 @@ public class Main {
 
         for (int i = 0; i < col; i++) {
             for (int j = 0; j < row; j++) {
-               if(!visited[i][j] && map[i][j] == 1) {
-                   map[i][j] = -1;
-               }
+                if (!visited[i][j] && map[i][j] == 1) {
+                    map[i][j] = -1;
+                }
             }
         }
 
@@ -74,7 +74,7 @@ public class Main {
 
     private static void bfs(int col, int row) {
         Queue<Node> queue = new LinkedList<>();
-        queue.add(new Node(col, row,0));
+        queue.add(new Node(col, row, 0));
 
         visited[col][row] = true;
         while (!queue.isEmpty()) {
@@ -84,20 +84,20 @@ public class Main {
                 int nc = node.col + dx[i];
                 int nr = node.row + dy[i];
 
-                if (nc >= 0 && nc <= map.length-1 && nr >= 0 && nr <= map[0].length-1 && !visited[nc][nr]) {
-                    if(map[nc][nr] == 0)
+                if (nc >= 0 && nc <= map.length - 1 && nr >= 0 && nr <= map[0].length - 1 && !visited[nc][nr]) {
+                    if (map[nc][nr] == 0)
                         continue;
 
-                    map[nc][nr] = node.cnt+1;
+                    map[nc][nr] = node.cnt + 1;
                     visited[nc][nr] = true;
-                    queue.add(new Node(nc,nr, node.cnt+1));
+                    queue.add(new Node(nc, nr, node.cnt + 1));
                 }
             }
         }
     }
 }
 
-class Node{
+class Node {
     int col;
     int row;
     int cnt;
