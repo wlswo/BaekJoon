@@ -7,6 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+/**
+ * BaekJoon
+ * https://www.acmicpc.net/problem/17219
+ * Problem: 비밀번호 찾기
+ * Level: S4
+ * Algorithm: 자료구조
+ */
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
